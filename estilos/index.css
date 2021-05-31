@@ -1,0 +1,263 @@
+@import "./header.css";
+@import "./form.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+
+    --font-family:'Open Sans', sans-serif;
+    --font-color-first: #443D5B;
+    --font-color-second: #ffffff;
+}
+
+.body1{
+    background-color: #fff;
+    background-image: url("../imagenes/Rectangle17.png");
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .body1{
+        background-image: url("../imagenes/Rectangle17.png");
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 150px;
+        min-height: 900px;
+    }
+
+    .first-image{
+        margin: 0 auto;
+        width: 40%;
+        height: 4px;
+        margin-top: 250px;
+    }
+
+    .second-image{
+        margin: 0 auto;
+        width: 40%;
+        height: 4px;
+        margin-top: 30px;
+    }
+
+    .main p{
+        color: var(--font-color-first);
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        padding: 0px 45px;
+    }
+
+    /* .body3{
+        background-color: var(--font-color-second);
+        background-image: none;
+        min-height: 1200px;
+        border: 10px solid yellow;
+    } */
+    
+    .section-text{
+        background-color: #EAE6EB;
+        color: var(--font-color-first);
+        font: var(--font-family);
+        font-weight: 500;
+        padding: 100px 0px 5px;
+        min-height: 900px;
+        /* margin: 150px 0px 5px 0px; */
+    }
+
+    .section-text__h2{
+        font-size: 30px;
+        color: var(--font-color-first);
+        font-weight: 500;
+        text-align: center;
+        margin: 20px 25px;
+
+
+    }
+
+    .section-text__firstP{
+        font-weight: 500;
+        font-size: 20px;
+        color: #443D5B;
+        text-align: start;
+        margin: 25px 30px;
+    }
+    .section-text__secondP{
+        font-size: 20px;
+        margin: 25px 30px;
+    }
+
+    .section-text__thirdP{
+        font-size: 20px;
+        margin: 25px 30px;
+    }
+
+    /*Proyects*/
+    .section-icon{
+        background-image: url("../imagenes/build.png");
+        background-size: cover;
+        height: 900px;
+        position: relative;
+        z-index: 999;
+    }
+
+    .section-icon__container{
+        position: absolute;
+        padding: 0px 15px;
+        top: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button > svg{
+        background-color: var(--font-color-second);
+        width: 35px;
+        height: 35px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .section-container{
+        background-color: var(--font-color-second);
+        position: absolute;
+        margin: 30px;
+        top: 750px;
+        padding: 5px 10px;
+    }
+
+    .section-container h2{
+        font-weight: 900;
+    }
+
+    .section-container p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    /*Users*/
+
+    .usercontainer{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        height: 1000px;
+    }
+
+    .usercontainer-icon{
+        margin-top: 35px;
+    }
+
+    .usercontainer-icon img{
+        border-radius: 50%;
+        background-color: #ccc;
+    }
+
+    .usercontainer-info__name{
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .usercontainer-info__ocupation{
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .usercontainer-info__description{
+        font-size: 20px;
+        font-weight: 300;
+        padding: 0px 40px;
+    }
+    /* Contact */
+
+    .contact{
+        background-color: var(--font-color-first);
+        min-height: 1200px;
+        z-index: 998;
+        color: #fff;
+        padding: 0px 30px;
+    }
+    
+    .contact-header{
+        font-weight: 700;
+        font-size: 35px;
+        padding: 90px 0px 20px;
+    }
+
+    .contact-icon{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 15px;
+        margin: 20px 0px;
+    }
+
+    .contact-icon__phone{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin: 20px 0px;
+    }
+    
+    .contact-icon__direction{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin: 20px 0px;
+    }
+
+    .social-container{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .contact-talent__title{
+        margin: 10px 0;
+    }
+
+    .contact-talent__description{
+        font-size: 20px;
+    }
+    
+    .contact-talent__email{
+        margin: 10px 0;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    .map{
+        width: 100%;
+        min-height: 500px;
+        margin: 0;
+        padding: 0;
+    }
+    .image-map{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+  
