@@ -47,12 +47,12 @@
     .form input{
         display: flex;
         flex-direction: column;
-        width: 34%;
+        width: 30%;
         background-color: #302940;
         color: white;
         height: 40px;
         padding: 0px 10px;
-        margin: 10px 0px 0px 95px;
+        margin: 10px 0px 0px 130px;
         font-size: 20px;
         font-weight: 500;
         text-decoration: none;
@@ -60,7 +60,7 @@
     }
 
     #form-message{
-        width: 86.1%;
+        width: 84.5%;
         height: 100px;
         padding-top: -10px;
     }
@@ -77,6 +77,6 @@
         width: 27%;
         height: 50px;
         font-size: 18px;
-        margin: 15px 30px;
+        margin: 15px 48px;
     }
 }
