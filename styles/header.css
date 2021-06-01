@@ -55,7 +55,7 @@
         display: flex;
         flex-direction: row;
         justify-content:start;
-        gap: 600px;
+        gap: 700px;
         background-color: transparent;
         z-index: 1000;
         }
@@ -85,7 +85,7 @@
         display: none;
     }
     .header-image{
-        max-height: 150px;
+        height: 90px;
         text-align: center;
         margin: 15px 0px;
     }
