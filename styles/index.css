@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./home.css";
 @import "./form.css";
 
 *{
@@ -17,60 +18,12 @@
 
 .body1{
     background-color: #fff;
-    background-image: url("../imagenes/Rectangle17.png");
+    /* background-image: url("../images/first-build.png"); */
     width: 100%;
 }
 
 @media screen and (max-width: 767px) {
     
-    .body1{
-        background-image: url("../imagenes/Rectangle17.png");
-        object-fit: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .main{
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-bottom: 150px;
-        min-height: 900px;
-    }
-
-    .first-image{
-        margin: 0 auto;
-        width: 40%;
-        height: 4px;
-        margin-top: 250px;
-    }
-
-    .second-image{
-        margin: 0 auto;
-        width: 40%;
-        height: 4px;
-        margin-top: 30px;
-    }
-
-    .main-container p{
-        color: var(--font-color-first);
-        font-size: 50px;
-        font-weight: 900;
-        letter-spacing: 2px;
-        margin-top: 5px;
-        padding: 0px 45px;
-    }
-
-    .main-text__desktop{
-        display: none;
-    }
-
-    .main-description__desktop{
-        display: none;
-    }
 
 
     /* .body3{
@@ -119,7 +72,7 @@
 
     /*Proyects*/
     .section-icon{
-        background-image: url("../imagenes/build.png");
+        background-image: url("../images/second-build.png");
         background-size: cover;
         height: 900px;
         position: relative;
@@ -275,63 +228,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .body1{
-        background-image: url("../imagenes/Rectangle17.png");
-        object-fit: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 1000px;
-    }
-    .main{
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-bottom: 150px;
-        height: auto;
-    }
-
-    .first-image{
-        align-self:center;
-        margin: 0 auto;
-        width: 15%;
-        height: 4px;
-        /* margin-top: 250px; */
-    }
-
-    .second-image{
-        margin: 0 auto;
-        width: 15%;
-        height: 4px;
-        align-self:center;
-        /* margin-top: 250px; */
-    }
-
-    .main-container p{
-        display: none;
-    }
-    .main-container__desktop{
-        height: auto;
-        align-self: center;
-    }
     
-    .main-text__desktop{
-        font-size: 50px;
-        font-weight: 900;
-        letter-spacing: 2px;
-        margin-top: 5px;
-        color: var(--font-color-first);
-    }
-    .main-description__desktop{
-        align-self: center;
-        font-size: 50px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        margin-top: 5px;
-        color: var(--font-color-first);
-    }
 
     .section-text{
         background-color: #EAE6EB;

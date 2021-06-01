@@ -1,0 +1,96 @@
+@media screen and (max-width: 767px) {
+    .home{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 150px;
+        min-height: 900px;
+    }
+    
+    .background{
+        background-image: url("../images/first-build.png");
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .home-image{
+        margin: 0 auto;
+        width: 40%;
+        height: 4px;
+    }
+
+    .first{
+        margin-top: 250px;
+    }
+
+    .second{
+        margin-top: 30px;
+    }
+
+    .home-container p{
+        color: var(--font-color-first);
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        padding: 0px 45px;
+    }
+
+    .home-container__desktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .background{
+        background-image: url("../images/first-build.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 1000px;
+    }
+    .home{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 150px;
+        height: auto;
+    }
+
+    .home-image{
+        align-self:center;
+        margin: 0 auto;
+        width: 15%;
+        height: 4px;
+    }
+
+    .home-container p{
+        display: none;
+    }
+    .home-container__desktop{
+        height: auto;
+        align-self: center;
+    }
+    
+    .desktop-text{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        color: var(--font-color-first);
+    }
+    .desktop-description{
+        align-self: center;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        color: var(--font-color-first);
+    }
+}

@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link href="./estilos/index.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
     
     <title>Andrew</title>
 </head>
 <body>
-    <header class="header" id="home">
+    
+    <!-- Header -->
+    <header class="header" id="header">
         <button class="header-button__first" id="btn"><i class="fas fa-bars"></i></button>
         <!-- <div class="header-button__show" id="box">
             <a href="#home">Home</a>
@@ -21,22 +23,23 @@
             <a href="ourteam.html">Our team</a>
             <a href="contact.html">Find Us</a>
         </div> -->
-        <img class="header-image" src="imagenes/logo.png" alt="AIRhitect">
+        <img class="header-image" src="images/logo.png" alt="AIRhitect">
         <button class="header-button__secondary">Contact</button>
     </header>
-    <!-- First Page -->
-    <main class="main body1">
-        <img class="first-image"src="./imagenes/Rectangle 5 copy 2.png" alt="Image"> 
-        <div class="main-container">
+
+    <!-- Home -->
+    <main class="home background" id="home">
+        <img class="home-image first"src="./images/rectangle.png" alt="Rectangle"> 
+        <div class="home-container">
             <p>dedicated </p> 
             <p>to the </p>
-            <p>future</p>
+            <p>future </p>
         </div>
-        <div class="main-container__desktop">
-            <p class="main-text__desktop">dedicated to the future</p>
-            <p class="main-description__desktop">web template</p>
+        <div class="home-container__desktop">
+            <p class="desktop-text">dedicated to the future</p>
+            <p class="desktop-description">web template</p>
         </div>
-        <img class="second-image" src="./imagenes/Rectangle 5 copy 2.png" alt="Image">
+        <img class="home-image second" src="./images/rectangle.png" alt="Rectangle">
     </main>
 
     <!-- About Us -->
@@ -65,9 +68,9 @@
             <p>Vivamus imperdiet hendrerit leo quis fringilla</p>
         </div>
         <div class="section-container__desktop">
-            <img src="./imagenes/build.png">
-            <img src="./imagenes/midImage.png">
-            <img src="./imagenes/rightImage.png">
+            <img src="./images/second-build.png">
+            <img src="./images/thithbuild.png">
+            <img src="./images/fourth-build.png">
         </div>
     </section>
 
@@ -75,7 +78,7 @@
     <section class="usercontainer">
         <main class="user">
             <div class="usercontainer-icon">
-                <img src="./imagenes/user-2 copy 4.png" width="90" height="90">
+                <img src="./images/icon-user.png" width="90" height="90">
             </div>
             <main class="usercontainer-info">
                 <h1 class="usercontainer-info__name">Colleague Name</h1>
@@ -85,18 +88,7 @@
         </main>
         <main class="user">
             <div class="usercontainer-icon">
-                <img src="./imagenes/user-2 copy 4.png" width="80" height="80">
-            </div>
-            <main class="usercontainer-info">
-                <h1 class="usercontainer-info__name">Colleague Name</h1>
-                <p class="usercontainer-info__ocupation">CEO</p>
-                <p class="usercontainer-info__description">Ut ultricies faucibus odio, gravida elementum ligula suscipit elementum. Nam dapibus odio nec arcu mattis, id placerat massa posuere. Praesent vitae sodales tellus, non facilisis dui.</p>
-            </main>
-        </main>
-
-        <main class="user">
-            <div class="usercontainer-icon">
-                <img src="./imagenes/user-2 copy 4.png" width="80" height="80">
+                <img src="./images/icon-user.png" width="80" height="80">
             </div>
             <main class="usercontainer-info">
                 <h1 class="usercontainer-info__name">Colleague Name</h1>
@@ -107,7 +99,18 @@
 
         <main class="user">
             <div class="usercontainer-icon">
-                <img src="./imagenes/user-2 copy 4.png" width="80" height="80">
+                <img src="./images/icon-user.png" width="80" height="80">
+            </div>
+            <main class="usercontainer-info">
+                <h1 class="usercontainer-info__name">Colleague Name</h1>
+                <p class="usercontainer-info__ocupation">CEO</p>
+                <p class="usercontainer-info__description">Ut ultricies faucibus odio, gravida elementum ligula suscipit elementum. Nam dapibus odio nec arcu mattis, id placerat massa posuere. Praesent vitae sodales tellus, non facilisis dui.</p>
+            </main>
+        </main>
+
+        <main class="user">
+            <div class="usercontainer-icon">
+                <img src="./images/icon-user.png" width="80" height="80">
             </div>
             <main class="usercontainer-info">
                 <h1 class="usercontainer-info__name">Colleague Name</h1>
@@ -117,7 +120,7 @@
         </main>
         <main class="user">
             <div class="usercontainer-icon">
-                <img src="./imagenes/user-2 copy 4.png" width="80" height="80">
+                <img src="./images/icon-user.png" width="80" height="80">
             </div>
             <main class="usercontainer-info">
                 <h1 class="usercontainer-info__name">Colleague Name</h1>
@@ -127,7 +130,7 @@
         </main>
         <main class="user">
             <div class="usercontainer-icon">
-                <img src="./imagenes/user-2 copy 4.png" width="80" height="80">
+                <img src="./images/icon-user.png" width="80" height="80">
             </div>
             <main class="usercontainer-info">
                 <h1 class="usercontainer-info__name">Colleague Name</h1>
@@ -196,7 +199,7 @@
         <!-- Form -->
         
         <section class="map">
-            <img src="./imagenes/map.png" alt="" class="image-map">
+            <img src="./images/map.png" alt="Map" class="image-map">
         </section>
     </section>
     
