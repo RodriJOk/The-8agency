@@ -1,3 +1,5 @@
+@media screen and (max-width: 767px) {
+
 .header{
     position: fixed;
     top: 0;
@@ -41,4 +43,51 @@
 
 .header-button__secondary{
     display: none;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:start;
+        gap: 600px;
+        background-color: transparent;
+        z-index: 1000;
+        }
+    
+    .header-button__first{
+        margin: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .header-button__show{
+        /* visibility: hidden; */
+        width: 0px;
+        height: 0px;
+    }
+    
+    .header-button__show.isactive{
+        position: absolute;
+        left: 10px;
+        top: 55px;
+        border: 10px solid red;
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+    }
+    
+    .header-button__secondary{
+        display: none;
+    }
+    .header-image{
+        max-height: 150px;
+        text-align: center;
+        margin: 15px 0px;
+    }
 }
