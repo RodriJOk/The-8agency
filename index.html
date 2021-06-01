@@ -7,22 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="./styles/pushbar.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
-    
-    <title>Andrew</title>
+
+    <title>The 8agency</title>
 </head>
 <body>
     
     <!-- Header -->
     <header class="header" id="header">
-        <button class="header-button__first" id="btn"><i class="fas fa-bars"></i></button>
-        <!-- <div class="header-button__show" id="box">
-            <a href="#home">Home</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="proyects.html">Works</a>
-            <a href="ourteam.html">Our team</a>
-            <a href="contact.html">Find Us</a>
-        </div> -->
+        <button class="header-button__first" id="btn" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
         <img class="header-image" src="images/logo.png" alt="AIRhitect">
         <button class="header-button__secondary">Contact</button>
     </header>
@@ -53,7 +47,7 @@
     </section>
     
     <!-- Proyects -->
-    <section class="proyects">
+    <section class="proyects" id="proyects">
         <div class="proyects-container">
             <button class="button">
                 <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg>
@@ -74,7 +68,7 @@
     </section>
 
     <!-- Our team -->
-    <section class="team">
+    <section class="team" id="ourteam">
         <main class="user">
             <div class="user-icon">
                 <img src="./images/icon-user.png" width="90" height="90">
@@ -197,7 +191,34 @@
             <img class="contact-map__image" src="./images/map.png" alt="Map">
         </div>
     </section>
+
+    <!-- Header Pushbar -->
     
+    <div class="pushbar" data-pushbar-id="pushbar-menu" data-pushbar-direction="left">
+        <div class="btn-close">
+            <button data-pushbar-close><i class="far fa-times-circle"></i></button>
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#proyects">Works</a>
+            <a href="#ourteam">Our team</a>
+            <a href="#contact">Find Us</a>
+        </div>
+    </div>
+
+    <!-- <div data-pushbar-id="mypushbar1" >
+        Push bar content 1
+        <button data-pushbar-close>Close</button>
+    </div> -->
+
     <script src="./javascript/index.js"></script>
+    <script src="./javascript/pushbar.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay:true,
+        });
+    </script>
 </body>
 </html>

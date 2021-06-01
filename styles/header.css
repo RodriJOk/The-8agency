@@ -4,7 +4,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content:start;
@@ -64,12 +63,21 @@
         margin: 15px;
         width: 30px;
         height: 30px;
+        cursor: pointer;
     }
     
     .header-button__show{
         /* visibility: hidden; */
         width: 0px;
         height: 0px;
+        display: none;
+    }
+
+    .header-button__show a{
+        /* visibility: hidden; */
+        width: 0px;
+        height: 0px;
+        display: none;
     }
     
     .header-button__show.isactive{
@@ -78,7 +86,14 @@
         top: 55px;
         width: 100px;
         height: 100px;
-        opacity: 1;
+    }
+
+    .header-button__show a.isactive{
+        position: absolute;
+        left: 10px;
+        top: 55px;
+        width: 100px;
+        height: 100px;
     }
     
     .header-button__secondary{
